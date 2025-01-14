@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UploadIcon from '@mui/icons-material/Upload';
 import Navbar from "./Navbar";
@@ -55,7 +55,9 @@ function AddItemPage() {
     alert("Item saved successfully!");
     navigate("/");
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Helmet title='add-item'>
       <div className="app" onClick={closeSidebar}>

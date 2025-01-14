@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
 import { Slide ,Roll, Zoom, Bounce, Flip} from "react-awesome-reveal";
@@ -14,7 +14,8 @@ const products = [
   { id: 3, name: "Yellow Tulips", type: "Tulips", price: 20, image: "../public/لقطة الشاشة 2024-12-30 174120.png", badge: "Sales" },
   { id: 4, name: "Bright Gerbera Daisy", type: "Congratulations", price: 12, image: "daisy.png", badge: "Sales" },
   { id: 5, name: "Eucalyptus", type: "Bouquets", price: 21, image: "eucalyptus.png", badge: "" },
-  { id: 6, name: "Mini Sunflowers", type: "Sunflowers", price: 34, image: "sunflowers.png", badge: "Sales" },
+  { id: 6, name: "Mini Sunflowers", type: "Sunflowers", price: 34, image: "sunflowers.png", badge: "Sales",   colors:['red','green','blue']
+},
   { id: 7, name: "Mini Sunflowers", type: "Sunflowers", price: 34, image: "sunflowers.png", badge: "Sales" },
   { id: 8, name: "Mini Sunflowers", type: "Sunflowers", price: 34, image: "sunflowers.png", badge: "Sales" },
   { id: 9, name: "Mini Sunflowers", type: "Sunflowers", price: 34, image: "sunflowers.png", badge: "Sales" },
@@ -91,7 +92,9 @@ function ItemsPage() {
   const handleNext = () => {
     console.log("Next clicked");
   };
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Helmet title='items'>
       <div className="app" onClick={closeSidebar}>

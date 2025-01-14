@@ -4,8 +4,26 @@ import React, { useState } from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import {Slide, Zoom } from "react-awesome-reveal";
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Navbar = ({isSidebarOpen, toggleSidebar}) => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      // تطبيق وإزالة النمط من <body>
+      if (isSidebarOpen) {
+        document.body.classList.add("open");
+      } 
+  else{
+    document.body.classList.remove("open");
+  
+  }
+      // تنظيف عند إزالة المكون
+      // return () => {
+      //   document.body.classList.remove("popup-active");
+      // };
+    }, [isSidebarOpen]);
   return (
     <>
       <Zoom direction="left" cascade duration={1500} triggerOnce >
@@ -24,10 +42,10 @@ const Navbar = ({isSidebarOpen, toggleSidebar}) => {
      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`} onClick={(e) => e.stopPropagation()} >           
       <Slide direction="left" cascade damping={0.2} duration={1500} triggerOnce>
       <ul className="sidebar-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="#categories">Categories</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to={'/add-item'}>Home</Link></li>
+          <li><Link to={'/'}>Categories</Link></li>
+          <li><Link to={'/'}>About Us</Link></li>
+          <li><Link to={'/'}>Contact</Link></li>
         </ul>
         </Slide>
       </div>
