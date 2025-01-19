@@ -1,0 +1,52 @@
+{
+    "navbar": {
+        "items": "Items",
+        "home": "Home",
+        "categories": "Categories",
+        "about_us": "About Us",
+        "contact": "Contact"
+      }
+      ,
+        "header": {
+          "add_item": "Add Item",
+          "search_placeholder": "Search Flower Types",
+          "all_products": "All Products",
+          "sales": "Sales",
+          "bouquets": "Bouquets",
+          "indoor_plants": "Indoor Plants"
+        }
+        ,
+        "buttons": {
+          "discount_10": "Discount 10%",
+          "discount_20": "Discount 20%",
+          "discount_30": "Discount 30%",
+          "romantic": "Romantic",
+          "sympathy": "Sympathy",
+          "congratulations": "Congratulations",
+          "succulents": "Succulents",
+          "low_light": "Low-Light",
+          "pet_friendly": "Pet-Friendly"
+        }
+        ,
+      
+    "add":{
+        "Add new item": "Add new item",
+        "Item Name": "Item Name",
+        "Item Price": "Item Price",
+        "Choose category": "Choose category",
+        "Select category": "Select category",
+        "Bouquets": "Bouquets",
+        "Indoor Plants": "Indoor Plants",
+        "Sunflowers": "Sunflowers",
+        "Select item colors": "Select item colors",
+        "Select color": "Select color",
+        "Red": "Red",
+        "Yellow": "Yellow",
+        "Pink": "Pink",
+        "Upload item photo": "Upload item photo",
+        "Save": "Save"
+
+    }
+     
+  }
+  

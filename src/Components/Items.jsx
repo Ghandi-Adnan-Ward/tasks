@@ -1,4 +1,4 @@
-import Helmet from "./Helmet/Helmet";
+import Helmet from "./../Helmet/Helmet";
 
 const Item = () => {
   const products = [

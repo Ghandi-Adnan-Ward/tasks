@@ -1,17 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import {  Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
 import "./App.css";
-import ItemsPage from "./ItemsPage";
-import AddItemPage from "./AddItemPage";
-import Item from "./Items";
+
+import Routers from "./routers/Routers";
+import { useTranslation } from "react-i18next";
 function App() {
+  const { i18n } = useTranslation();
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+    document.documentElement.dir = i18n.language === "ar" ? "rtl" : "ltr";
+  }, [i18n.language]);
+
   return (
-      <Routes>
-        <Route path="/" element={<ItemsPage />} />
-        <Route path="/i" element={<Item />} />
-        <Route path="/add-item" element={<AddItemPage />} />
-      </Routes>
+      <Routers/>
     );
 }
 

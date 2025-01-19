@@ -1,0 +1,48 @@
+{
+        "navbar": {
+          "items": "Artikel",
+          "home": "Startseite",
+          "categories": "Kategorien",
+          "about_us": "Über Uns",
+          "contact": "Kontakt"
+        }
+        ,           
+    "header": {
+      "add_item": "Artikel hinzufügen",
+      "search_placeholder": "Blumentypen suchen",
+      "all_products": "Alle Produkte",
+      "sales": "Angebote",
+      "bouquets": "Blumensträuße",
+      "indoor_plants": "Zimmerpflanzen"
+    },
+    "buttons": {
+      "discount_10": "10% Rabatt",
+      "discount_20": "20% Rabatt",
+      "discount_30": "30% Rabatt",
+      "romantic": "Romantisch",
+      "sympathy": "Mitgefühl",
+      "congratulations": "Herzlichen Glückwunsch",
+      "succulents": "Sukkulenten",
+      "low_light": "Wenig Licht",
+      "pet_friendly": "Haustierfreundlich"
+    }
+    ,
+    "add": {
+        "Add new item": "Neuen Artikel hinzufügen",
+        "Item Name": "Artikelname",
+        "Item Price": "Artikelpreis",
+        "Choose category": "Kategorie wählen",
+        "Select category": "Kategorie auswählen",
+        "Select item colors": "Artikel Farben auswählen",
+        "Select color": "Farbe auswählen",
+        "Bouquets": "Blumensträuße",
+        "Indoor Plants": "Zimmerpflanzen",
+        "Sunflowers": "Sonnenblumen",
+        "Red": "Rot",
+        "Yellow": "Gelb",
+        "Pink": "Rosa",
+        "Upload item photo": "Artikelbild hochladen",
+        "Save": "Speichern"
+      }
+  }
+  

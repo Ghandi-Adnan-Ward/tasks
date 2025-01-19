@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import "./App.css";
 import { useNavigate } from "react-router-dom";
 import { Slide ,Roll, Zoom, Bounce, Flip} from "react-awesome-reveal";
+import './Itemspage.css'
+import Navbar from "../../Components/Navbar/Navbar";
+import Helmet from "../../Helmet/Helmet";
+import { useTranslation } from 'react-i18next';
 
-import Navbar from "./Navbar";
-import Helmet from "./Helmet/Helmet";
 const products = [
   { id: 1, name: "Red Rose", type: "Bouquets",type1: "Bouquets", price: 20, image: "../public/8PBgPKYnVnhtARnm2lb8cWoawnT0jaJrNJTH4xEt.jpg", badge: "",
    colors:['red','green','blue']
@@ -28,6 +29,10 @@ function ItemsPage() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   // const handleAddItemClick = () => {
   //   navigate("/add-item");
@@ -40,9 +45,9 @@ function ItemsPage() {
          return (
             <div className="discount-buttons">
               <Bounce cascade>
-                <button>Discount 10%</button>
-                <button>Discount 20%</button>
-                <button>Discount 30%</button>
+                <button>{t('buttons.discount_10')}</button>
+                <button>{t("buttons.discount_20")}</button>
+                <button>{t("buttons.discount_30")}</button>
             </Bounce>
            </div>
         );
@@ -51,9 +56,9 @@ function ItemsPage() {
           return (
             <div className="discount-buttons">
               <Bounce cascade>
-                <button>Romantic</button>
-                <button>Sympathy</button>
-                <button>Congratulations</button>
+                <button>{t("buttons.romantic")}</button>
+                <button>{t("buttons.sympathy")}</button>
+                <button>{t("buttons.congratulations")}</button>
               </Bounce>
             </div>
           )
@@ -62,9 +67,9 @@ function ItemsPage() {
           return (
             <div className="discount-buttons">
               <Bounce cascade damping={0.3}>
-                <button>Succulents</button>
-                <button>Low-Light</button>
-                <button>Pet-Friendly</button>
+                <button>{t("buttons.succulents")}</button>
+                <button>{t("buttons.low_light")}</button>
+                <button>{t("buttons.pet_friendly")}</button>
               </Bounce>
             </div>
           )
@@ -98,19 +103,26 @@ function ItemsPage() {
   return (
     <Helmet title='items'>
       <div className="app" onClick={closeSidebar}>
+      <div className="discount-buttons">
+          <button onClick={() => changeLanguage('en')}>English</button>
+          <button onClick={() => changeLanguage('ar')}>العربية</button>
+          <button onClick={() => changeLanguage('es')}>Español</button>
+          <button onClick={() => changeLanguage('de')}>Deutsch</button>
+          <button onClick={() => changeLanguage('fr')}>Français</button>
+        </div>
       <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
       <Slide direction="left" cascade damping={0.3} duration={1500}>
 
       <header className="header">
         <button className="add-item" onClick={()=>navigate('/add-item')}>
-          <i className="fas fa-plus"></i> Add Item
+          <i className="fas fa-plus"></i>{t('header.add_item')}
         </button>
         <div className="form-group">
           <select name="category" onChange={handleCategoryChange}>
-            <option value="">All Products</option>
-            <option value="sales">sales</option>
-            <option value="Bouquets">Bouquets</option>
-            <option value="Indoor Plants">Indoor Plants</option>
+            <option value="">{t('header.all_products')}</option>
+            <option value="sales">{t('header.sales')}</option>
+            <option value="Bouquets">{t('header.bouquets')}</option>
+            <option value="Indoor Plants">{t('header.indoor_plants')}</option>
           </select>
         </div>
       </header>
@@ -119,39 +131,12 @@ function ItemsPage() {
       <i className="fas fa-search search-icon"></i>
       <input
         type="text"
-        placeholder="Search Flower Types"
+        placeholder={t('header.search_placeholder')}
         className="search-bar"
       />
     </div>
 </Slide>
    
-    {/* {selectedCategory === "sales" ? (
-        <div className="discount-buttons">
-           <button>Discount 10%</button>
-          <button>Discount 20%</button>
-          <button>Discount 30%</button>
-        </div>
-      )
-    :selectedCategory === "Bouquets" ?
-    (
-      <div className="discount-buttons">
-        <button>Romantic</button>
-        <button>Sympathy</button>
-        <button>Congratulations</button>
-      </div>
-    ) 
-    : selectedCategory === "Indoor Plants" ?
-    (
-      <div className="discount-buttons">
-        <button>Succulents</button>
-        <button>Low-Light</button>
-        <button>Pet-Friendly</button>
-      </div>
-    )
-    :
-    null
-    }
-     */}
  {renderDiscountButtons()}
 
       <div className="product-grid">

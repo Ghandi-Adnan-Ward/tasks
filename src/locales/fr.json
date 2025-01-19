@@ -1,0 +1,48 @@
+{
+    "navbar": {
+        "items": "Articles",
+        "home": "Accueil",
+        "categories": "Catégories",
+        "about_us": "À Propos",
+        "contact": "Contact"
+      }
+      ,
+    "header": {
+      "add_item": "Ajouter un article",
+      "search_placeholder": "Rechercher des types de fleurs",
+      "all_products": "Tous les produits",
+      "sales": "Promotions",
+      "bouquets": "Bouquets",
+      "indoor_plants": "Plantes d'intérieur"
+    },
+    "buttons": {
+      "discount_10": "Réduction 10%",
+      "discount_20": "Réduction 20%",
+      "discount_30": "Réduction 30%",
+      "romantic": "Romantique",
+      "sympathy": "Sympathie",
+      "congratulations": "Félicitations",
+      "succulents": "Succulentes",
+      "low_light": "Faible lumière",
+      "pet_friendly": "Adapté aux animaux"
+    }
+    ,
+    "add": {
+        "Add new item": "Ajouter un nouvel article",
+        "Item Name": "Nom de l'article",
+        "Item Price": "Prix de l'article",
+        "Choose category": "Choisir une catégorie",
+        "Select category": "Sélectionnez une catégorie",
+        "Select item colors": "Sélectionnez les couleurs de l'article",
+        "Select color": "Sélectionnez une couleur",
+        "Bouquets": "Bouquets",
+        "Indoor Plants": "Plantes d'intérieur",
+        "Sunflowers": "Tournesols",
+        "Red": "Rouge",
+        "Yellow": "Jaune",
+        "Pink": "Rose",
+        "Upload item photo": "Télécharger la photo de l'article",
+        "Save": "Sauvegarder"
+      }
+  }
+  

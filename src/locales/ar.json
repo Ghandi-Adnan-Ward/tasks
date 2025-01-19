@@ -1,0 +1,51 @@
+{
+    "navbar": {
+        "items": "العناصر",
+        "home": "الرئيسية",
+        "categories": "الفئات",
+        "about_us": "معلومات عنا",
+        "contact": "تواصل معنا"
+      }
+      ,
+    "header": {
+        "add_item": "إضافة منتج",
+        "search_placeholder": "ابحث عن أنواع الزهور",
+        "all_products": "كل المنتجات",
+        "sales": "عروض",
+        "bouquets": "باقات",
+        "indoor_plants": "نباتات داخلية"
+      },
+      "buttons": {
+        "discount_10": "خصم 10%",
+        "discount_20": "خصم 20%",
+        "discount_30": "خصم 30%",
+        "romantic": "رومانسي",
+        "sympathy": "تعاطف",
+        "congratulations": "تهاني",
+        "succulents": "عصاريات",
+        "low_light": "إضاءة منخفضة",
+        "pet_friendly": "صديقة للحيوانات"
+      }
+      ,
+    
+    "add":{
+        "Add new item": "إضافة عنصر جديد",
+        "Item Name": "اسم العنصر",
+        "Item Price": "سعر العنصر",
+        "Choose category": "اختيار الفئة",
+        "Select category": "حدد الفئة",
+        "Bouquets": "باقات",
+        "Indoor Plants": "نباتات داخلية",
+        "Sunflowers": "عباد الشمس",
+        "Select item colors": "اختيار لون العنصر",
+        "Select color": "اختيار اللون",
+        "Red": "أحمر",
+        "Yellow": "أصفر",
+        "Pink": "زهري",
+        "Upload item photo": "رفع صورة العنصر",
+        "Save": "حفظ"
+
+    }
+    
+  }
+  

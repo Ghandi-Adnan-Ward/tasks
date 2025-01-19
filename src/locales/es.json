@@ -1,0 +1,47 @@
+{
+    "navbar": {
+        "items": "Artículos",
+        "home": "Inicio",
+        "categories": "Categorías",
+        "about_us": "Sobre Nosotros",
+        "contact": "Contacto"
+    }
+      ,
+    "header": {
+        "add_item": "Agregar artículo",
+        "search_placeholder": "Buscar tipos de flores",
+        "all_products": "Todos los productos",
+        "sales": "Ofertas",
+        "bouquets": "Ramos",
+        "indoor_plants": "Plantas de interior"
+      },
+      "buttons": {
+        "discount_10": "Descuento 10%",
+        "discount_20": "Descuento 20%",
+        "discount_30": "Descuento 30%",
+        "romantic": "Romántico",
+        "sympathy": "Simpatía",
+        "congratulations": "Felicidades",
+        "succulents": "Suculentas",
+        "low_light": "Luz baja",
+        "pet_friendly": "Apto para mascotas"
+      }
+      ,
+      "add": {
+        "Add new item": "Agregar nuevo artículo",
+        "Item Name": "Nombre del artículo",
+        "Item Price": "Precio del artículo",
+        "Choose category": "Elija categoría",
+        "Select category": "Seleccione categoría",
+        "Select item colors": "Seleccione colores del artículo",
+        "Select color": "Seleccione color",
+        "Bouquets": "Ramos",
+        "Indoor Plants": "Plantas de interior",
+        "Sunflowers": "Girasoles",
+        "Red": "Rojo",
+        "Yellow": "Amarillo",
+        "Pink": "Rosa",
+        "Upload item photo": "Subir foto del artículo",
+        "Save": "Guardar"
+      }
+}
