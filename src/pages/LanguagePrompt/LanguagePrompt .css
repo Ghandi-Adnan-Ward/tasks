@@ -1,0 +1,45 @@
+.language-prompt {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d9534f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .language-prompt button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .language-prompt button:hover {
+    background-color: #c9302c;
+  }
+  .language-selector {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .language-selector button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .language-selector button:hover {
+    background-color: #c9302c;
+  }
+  

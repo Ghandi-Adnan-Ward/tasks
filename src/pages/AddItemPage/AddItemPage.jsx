@@ -66,13 +66,13 @@ function AddItemPage() {
   return (
     <Helmet title='add-item'>
       <div className="app" onClick={closeSidebar}>
-        <div className="discount-buttons">
+        {/* <div className="discount-buttons">
           <button onClick={() => changeLanguage('en')}>English</button>
           <button onClick={() => changeLanguage('ar')}>العربية</button>
           <button onClick={() => changeLanguage('es')}>Español</button>
           <button onClick={() => changeLanguage('de')}>Deutsch</button>
           <button onClick={() => changeLanguage('fr')}>Français</button>
-        </div>
+        </div> */}
     <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
     <Slide direction="left" duration={1500}>
     <header className="header1" >

@@ -175,7 +175,7 @@
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: auto; /* لضمان توسيط الكارت */
+    margin: auto; 
   }
   
 .product-card:hover {
@@ -186,7 +186,7 @@
     display: flex;
     gap: -10px;
   }
-  .object-fit .product-image {
+.object-fit .product-image {
     top: 257px;
     left: 30px;
     gap: 0px;
@@ -197,7 +197,7 @@
     border-radius: 10px;
     margin-bottom: 10px;
   }
-  .product-imagee {
+.product-imagee {
     top: 257px;
     left: 30px;
     gap: 0px;
@@ -210,30 +210,30 @@
   }
   
   
-  .product-name {
+.product-name {
     font-family: Lucida Bright;
     font-size: 18px;
     font-weight: 600;
     line-height: 14.13px;
-    text-align: left;
+    text-align: start;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin: 10px 0;
     color: #453A3C;
   }
   
-  .product-type {
+.product-type {
     font-family: Lucida Bright;
     font-size: 14px;
     font-weight: 400;
     line-height: 11.78px;
-    text-align: left;
+    text-align: start;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #979797;
     margin-bottom: 5px;
   }
-  .product-type1 {
+.product-type1 {
     width: 46px;
     height: 12px;
     top: 381px;
@@ -250,7 +250,7 @@
     color: #979797;
   
   }
-  .product-price {
+.product-price {
     width: 23px;
     height: 14px;
     top: 379px;
@@ -269,14 +269,14 @@
     color: #000000;
   }
   
-  .product-details {
+.product-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
   }
   
-  .product-badge {
+.product-badge {
     position: absolute;
     top: -15px;
     right: -10px;
@@ -293,7 +293,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     }
-    @media (max-width: 768px) {
+   
+  @media (max-width: 768px) {
         .search-bar{
           width: 95%;
           padding: 10px;

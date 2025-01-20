@@ -31,7 +31,6 @@ body {
   line-height: 18.84px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  
 
 }
 
@@ -49,9 +48,6 @@ body {
   gap: 15px;
   color: #E3E2E0;
 }
-
-
-
 
 .form-container {
   max-width: 400px;

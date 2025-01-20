@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +7,8 @@ import './Itemspage.css'
 import Navbar from "../../Components/Navbar/Navbar";
 import Helmet from "../../Helmet/Helmet";
 import { useTranslation } from 'react-i18next';
+import Cookies from "js-cookie";
+import LanguagePrompt from "../LanguagePrompt/LanguagePrompt ";
 
 const products = [
   { id: 1, name: "Red Rose", type: "Bouquets",type1: "Bouquets", price: 20, image: "../public/8PBgPKYnVnhtARnm2lb8cWoawnT0jaJrNJTH4xEt.jpg", badge: "",
@@ -30,8 +33,21 @@ function ItemsPage() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+  const savedLanguage = Cookies.get("language");
+  const [showPrompt, setShowPrompt] = useState(false);
+  const[lan,setlan]=useState('')
+  useEffect(() => {
+    setlan(Cookies.get('language'))
+    console.log(savedLanguage)
+  }, [i18n])
+  
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    setlan(lang)
+    // Cookies.remove("language"); 
+    setShowPrompt(true)
+    console.log(lang)
+    // console.log(savedLanguage)
   };
 
   // const handleAddItemClick = () => {
@@ -103,13 +119,14 @@ function ItemsPage() {
   return (
     <Helmet title='items'>
       <div className="app" onClick={closeSidebar}>
-      <div className="discount-buttons">
+        {savedLanguage && <div className="discount-buttons">
           <button onClick={() => changeLanguage('en')}>English</button>
           <button onClick={() => changeLanguage('ar')}>العربية</button>
           <button onClick={() => changeLanguage('es')}>Español</button>
           <button onClick={() => changeLanguage('de')}>Deutsch</button>
           <button onClick={() => changeLanguage('fr')}>Français</button>
-        </div>
+        </div>}
+        <LanguagePrompt languane={lan} show={showPrompt}/>
       <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
       <Slide direction="left" cascade damping={0.3} duration={1500}>
 
