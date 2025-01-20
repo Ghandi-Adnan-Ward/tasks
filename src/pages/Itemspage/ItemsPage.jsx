@@ -119,13 +119,20 @@ function ItemsPage() {
   return (
     <Helmet title='items'>
       <div className="app" onClick={closeSidebar}>
-        {savedLanguage && <div className="discount-buttons">
+        {/* {savedLanguage && <div className="discount-buttons">
           <button onClick={() => changeLanguage('en')}>English</button>
           <button onClick={() => changeLanguage('ar')}>العربية</button>
           <button onClick={() => changeLanguage('es')}>Español</button>
           <button onClick={() => changeLanguage('de')}>Deutsch</button>
           <button onClick={() => changeLanguage('fr')}>Français</button>
-        </div>}
+        </div>} */}
+        <div className="discount-buttons">
+          <button onClick={() => changeLanguage('en')}>English</button>
+          <button onClick={() => changeLanguage('ar')}>العربية</button>
+          <button onClick={() => changeLanguage('es')}>Español</button>
+          <button onClick={() => changeLanguage('de')}>Deutsch</button>
+          <button onClick={() => changeLanguage('fr')}>Français</button>
+        </div>
         <LanguagePrompt languane={lan} show={showPrompt}/>
       <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
       <Slide direction="left" cascade damping={0.3} duration={1500}>
