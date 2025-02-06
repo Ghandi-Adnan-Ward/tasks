@@ -24,7 +24,11 @@
       "congratulations": "Félicitations",
       "succulents": "Succulentes",
       "low_light": "Faible lumière",
-      "pet_friendly": "Adapté aux animaux"
+      "pet_friendly": "Adapté aux animaux",
+      "go_to_cart":"charrette",
+      "buy":"acheter"
+
+
     }
     ,
     "add": {

@@ -24,7 +24,10 @@
       "congratulations": "Herzlichen Glückwunsch",
       "succulents": "Sukkulenten",
       "low_light": "Wenig Licht",
-      "pet_friendly": "Haustierfreundlich"
+      "pet_friendly": "Haustierfreundlich",
+      "go_to_cart":"Karren",
+      "buy":"kaufen"
+
     }
     ,
     "add": {

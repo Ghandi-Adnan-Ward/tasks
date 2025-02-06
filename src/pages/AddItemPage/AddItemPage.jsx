@@ -6,6 +6,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { Slide } from "react-awesome-reveal";
 import Helmet from "../../Helmet/Helmet";
 import { useTranslation } from "react-i18next";
+import axios from 'axios'
 function AddItemPage() {
   const navigate = useNavigate();
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -18,6 +19,7 @@ function AddItemPage() {
     photo: null,
   });
 
+  
   const { t, i18n } = useTranslation();
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -50,15 +52,29 @@ function AddItemPage() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFileChange = (e) => {
-    setFormData({ ...formData, photo: e.target.files[0] });
-  };
+  // const handleFileChange = (e) => {
+  //   setFormData({ ...formData, photo: e.target.files[0] });
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    // const formCar = new FormData();
+    // formCar.append('itemName', e.target.name.value);
+    // formCar.append('itemPrice', e.target.name.value);
+    // formCar.append('category', e.target.name.value);
+    // formCar.append('color', e.target.name.value);
+    // formCar.append('photo', image);
+
+    try {
+        axios.post()
+        console.log(formData);
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+
+    }
     alert("Item saved successfully!");
-    navigate("/");
+    // navigate("/");
   };
   useEffect(() => {
     window.scrollTo(0, 0);

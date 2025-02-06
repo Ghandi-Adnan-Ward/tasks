@@ -25,7 +25,9 @@
           "congratulations": "Congratulations",
           "succulents": "Succulents",
           "low_light": "Low-Light",
-          "pet_friendly": "Pet-Friendly"
+          "pet_friendly": "Pet-Friendly",
+          "go_to_cart":"Cart",
+          "buy":"buy"
         }
         ,
       

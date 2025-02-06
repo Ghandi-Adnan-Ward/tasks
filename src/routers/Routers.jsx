@@ -5,6 +5,7 @@ import ItemsPage from "../pages/Itemspage/ItemsPage";
 import AddItemPage from '../pages/AddItempage/AddItemPage';
 import Item from "../Components/Items";
 import LanguagePrompt from '../pages/LanguagePrompt/LanguagePrompt ';
+import CartPage from '../pages/CartPage/CartPage';
 const Routers = () => {
   return (
     <Fragment>
@@ -12,6 +13,7 @@ const Routers = () => {
         <Route path="/" element={<ItemsPage />} />
         <Route path="/i" element={<Item />} />
         <Route path="/add-item" element={<AddItemPage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </Fragment>
 )
