@@ -66,7 +66,7 @@ function AddItemPage() {
     // formCar.append('photo', image);
 
     try {
-        axios.post()
+        axios.post('')
         console.log(formData);
 
     } catch (error) {
