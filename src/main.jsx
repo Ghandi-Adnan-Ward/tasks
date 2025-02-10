@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
          <I18nextProvider i18n={i18n}>
 
-    <Router basename="/tasks">
+    <Router basename="/">
       <App/>
       </Router>
       </I18nextProvider>
